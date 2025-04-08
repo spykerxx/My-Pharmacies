@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profileheader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971" />
+
+    <ImageView
+        android:id="@+id/imageViewProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profiledefaultpic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView54"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/imageView54"
+        app:layout_constraintTop_toTopOf="@+id/imageView54"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <ImageView
+        android:id="@+id/imageViewProfileLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profilelogout"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView54"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="@+id/imageView54"
+        app:layout_constraintTop_toTopOf="@+id/imageView54"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/textViewProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ohoud"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView54"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView54"
+        app:layout_constraintTop_toTopOf="@+id/imageView54"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/imageView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profilesmthbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <ImageView
+        android:id="@+id/imageViewProfileMyPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profilemypoints"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+        app:layout_constraintEnd_toEndOf="@+id/imageView59"
+        app:layout_constraintStart_toStartOf="@+id/imageView59"
+        app:layout_constraintTop_toTopOf="@+id/imageView59" />
+
+    <ImageView
+        android:id="@+id/imageViewProfileRecentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profilerecentview"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+        app:layout_constraintEnd_toEndOf="@+id/imageView59"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/imageView59"
+        app:layout_constraintTop_toTopOf="@+id/imageView59" />
+
+    <ImageView
+        android:id="@+id/imageViewProfileWishList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profilewishlist"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+        app:layout_constraintEnd_toEndOf="@+id/imageView59"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/imageView59"
+        app:layout_constraintTop_toTopOf="@+id/imageView59" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView59"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="40dp">
+
+        <!-- Profile TextView -->
+        <TextView
+            android:id="@+id/textViewProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Profile"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewProfileMyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profilemyaccount"
+            android:layout_below="@id/textViewProfile"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProfileAddressInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profileaddressinformation"
+            android:layout_below="@id/imageViewProfileMyAccount"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Order TextView -->
+        <TextView
+            android:id="@+id/textViewOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewProfileAddressInformation"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Order"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewProfileOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profileorderhistory"
+            android:layout_below="@id/textViewOrder"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProfileTrackOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profiletrackorder"
+            android:layout_below="@id/imageViewProfileOrderHistory"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Settings TextView -->
+        <TextView
+            android:id="@+id/textViewSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewProfileTrackOrder"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Settings"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewProfileSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profilesupport"
+            android:layout_below="@id/textViewSettings"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProfileFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profilefeedback"
+            android:layout_below="@id/imageViewProfileSupport"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProfileLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settingslanguage"
+            android:layout_below="@id/imageViewProfileFeedback"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProfileAboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profileaboutus"
+            android:layout_below="@id/imageViewProfileLanguage"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

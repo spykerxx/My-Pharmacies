@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerMedicalHistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998">
+
+        <!-- Birth Day -->
+        <TextView
+            android:id="@+id/textViewBirthDayLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth day : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewBirthDayValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/textViewBirthDayLabel"
+            android:text="" />
+
+        <!-- Gender -->
+        <TextView
+            android:id="@+id/textViewGenderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBirthDayLabel"
+            android:layout_marginTop="16dp"
+            android:text="Gender : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewGenderValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBirthDayLabel"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewGenderLabel"
+            android:text="" />
+
+        <!-- Diseases -->
+        <TextView
+            android:id="@+id/textViewDiseasesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewGenderLabel"
+            android:layout_marginTop="16dp"
+            android:text="Diseases : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDiseasesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewGenderLabel"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewDiseasesLabel"
+            android:text="" />
+
+        <!-- Medicines -->
+        <TextView
+            android:id="@+id/textViewMedicinesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDiseasesLabel"
+            android:layout_marginTop="16dp"
+            android:text="Medicines : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMedicinesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDiseasesLabel"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewMedicinesLabel"
+            android:text="" />
+
+        <!-- Complications -->
+        <TextView
+            android:id="@+id/textViewComplicationsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMedicinesLabel"
+            android:layout_marginTop="16dp"
+            android:text="Complications : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewComplicationsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMedicinesLabel"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewComplicationsLabel"
+            android:text="" />
+
+        <!-- Allergies -->
+        <TextView
+            android:id="@+id/textViewAllergiesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewComplicationsLabel"
+            android:layout_marginTop="16dp"
+            android:text="Allergies : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAllergiesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewComplicationsLabel"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewAllergiesLabel"
+            android:text="" />
+
+        <!-- Medications Allergic Reaction -->
+        <TextView
+            android:id="@+id/textViewAllergicReactionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAllergiesLabel"
+            android:layout_marginTop="16dp"
+            android:text="Medications that caused an allergic reaction : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAllergicReactionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAllergiesLabel"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewAllergicReactionLabel"
+            android:text="" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69"
+        app:srcCompat="@drawable/lineview" />
+
+    <ImageView
+        android:id="@+id/imageViewCustomerHistoryBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971"
+        app:srcCompat="@drawable/customermedicalhistory" />
+</androidx.constraintlayout.widget.ConstraintLayout>

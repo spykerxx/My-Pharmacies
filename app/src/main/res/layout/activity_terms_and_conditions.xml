@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ImageView for the heading -->
+        <ImageView
+            android:id="@+id/imageViewTermsAndConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/termsandconditions"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:paddingBottom="16dp"/>
+
+        <!-- Registration Conditions -->
+        <TextView
+            android:id="@+id/textViewRegistrationConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Registration Conditions:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+        <TextView
+            android:id="@+id/textViewRegistrationCondition1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. No one has the right to use the site if his membership is canceled by My Pharmacies"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewRegistrationCondition2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. If any user registers as a commercial enterprise, his commercial enterprise will be bound by all the terms and conditions contained in this agreement."
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewRegistrationCondition3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Every person who uses the site must adhere to all applicable laws and regulations regulating electronic commerce (commerce via the Internet)."
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewRegistrationCondition4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. No customer has the right to use one email and/or one mobile number to open more than one account for any reason, and the site administration has the right to freeze the violating accounts and/or cancel these accounts or one of them, with a commitment to liquidate all transactions related to the account before closing it and/or Freeze and/or cancel it without incurring any responsibility on the site."
+            android:paddingBottom="16dp"/>
+
+        <!-- Electronic Communication -->
+        <TextView
+            android:id="@+id/textViewElectronicCommunication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Electronic Communication"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewElectronicCommunicationContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By agreeing to use the website and our electronic services, you agree to receive our electronic messages in all their forms through e-mail, periodic bulletins, or notices and alerts announced on the website. Accordingly, you implicitly agree that all electronic transactions sent to you by us are legally binding and treated as written transactions. You can cancel receiving such messages by clicking on the option to request not to receive promotional messages, which is available at the bottom of promotional and advertising messages. We have the right to monitor, record and save any phone call, e-mail, or any other form of electronic communication with you for training purposes, with the aim of verifying the advice and comments directed to us and to improve and develop the quality of service provided to our customers."
+            android:paddingBottom="16dp"/>
+
+        <!-- Terms and Conditions for using the gift card -->
+        <TextView
+            android:id="@+id/textViewGiftCardTermsConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Terms and conditions for using the gift card"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewGiftCardTermsConditionsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. The medicine gift card must be in printed or digital form (not printed)).\n\n2. None of the gift cards, whether printed or digital, have an expiration date.\n\n3. The card cannot be returned or the balance can be exchanged for cash.\n\n4. The gift card can be used and purchased through my pharmacies."
+            android:paddingBottom="16dp"/>
+
+        <!-- Services Provided -->
+        <TextView
+            android:id="@+id/textViewServicesProvided"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Services provided"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewServicesProvidedContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1- Pharmaceutical consultations\nProviding drug advice to the client or informing him of seeing a doctor for cases that require medical intervention.\n\n2- Consult doctors\nProviding doctor consultation to the client\n\n3- Request items\n Knowing the customer’s needs and creating a request for him.\n\nCreate an order by choosing home service or delivery from the pharmacy based on the customer’s choice.\n\nOffer different payments to the customer.\n\n4- Description of recipes\n\nDirecting the customer to prescribe the special prescription via the application, website, or instant chat, and the pharmacist to review the adequate prescription and notify the customer of comments on the case.\n\nCases related to Ministry of Health prescriptions (targeted) or insurance prescriptions are transferred to the specialist department"
+            android:paddingBottom="16dp"/>
+
+        <!-- Amendment to the list of terms and conditions -->
+        <TextView
+            android:id="@+id/textViewAmendmentToTermsConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Amendment to the list of terms and conditions"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewAmendmentToTermsConditionsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Pharmacies has the absolute right at any time to amend the terms and conditions of the site without prior notice or warning. You can access the latest version of the Terms and Conditions at any time on the Website. If you do not accept the modifications to the Terms and Conditions, you must stop using this Service. If you continue to use this service, you implicitly agree to be bound by the revised terms and conditions of use of this website."
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

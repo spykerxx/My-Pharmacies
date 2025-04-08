@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserAddressActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/imageViewDeliveryInformationBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02999998"
+        app:srcCompat="@drawable/deliveryinformation" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addresssearchbar"
+        android:ems="10"
+        android:hint="Search for your location or short address"
+        android:inputType="textPersonName"
+        android:paddingStart="30dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView65"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="50dp">
+
+            <!-- Country TextView -->
+            <TextView
+                android:id="@+id/textViewCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Country"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCountry"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner"/>
+
+            <!-- City TextView -->
+            <TextView
+                android:id="@+id/textViewRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Region"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCountry"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/addresssmall"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textSize="16sp" />
+
+
+            <!-- City TextView -->
+            <TextView
+                android:id="@+id/textViewCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="90dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCountry"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/spinner"/>
+
+            <!-- Neighborhood TextView -->
+            <TextView
+                android:id="@+id/textViewNeighborhood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neighborhood"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="90dp"/>
+
+            <EditText
+                android:id="@+id/editTextNeighborhood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCountry"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/addresssmall"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textSize="16sp" />
+
+
+            <!-- Street Name TextView -->
+            <TextView
+                android:id="@+id/textViewStreetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Name"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="164dp"/>
+
+            <EditText
+                android:id="@+id/editTextStreetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addresssmall"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="30dp"
+                android:textSize="16sp"
+                android:layout_below="@id/textViewStreetName"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Short Address TextView -->
+            <TextView
+                android:id="@+id/textViewShortAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Address"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="164dp"/>
+
+            <EditText
+                android:id="@+id/editTextShortAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addresssmall"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="30dp"
+                android:textSize="16sp"
+                android:layout_below="@id/textViewShortAddress"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Building NO TextView -->
+            <TextView
+                android:id="@+id/textViewBuildingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building No."
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="238dp"/>
+
+            <EditText
+                android:id="@+id/editTextBuildingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBuildingNo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/addresssmall"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="30dp"
+                android:textSize="16sp" />
+
+            <!-- Apartment NO TextView -->
+            <TextView
+                android:id="@+id/textViewApartmentNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apartment No."
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="238dp"/>
+
+            <EditText
+                android:id="@+id/editTextApartmentNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addressbig"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="30dp"
+                android:textSize="16sp"
+                android:layout_below="@id/textViewApartmentNo"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Contact Information TextView -->
+            <TextView
+                android:id="@+id/textViewContactInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="325dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Contact Information"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- Full Name TextView -->
+            <TextView
+                android:id="@+id/textViewFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="360dp"/>
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addressbig"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="30dp"
+                android:textSize="16sp"
+                android:layout_below="@id/textViewFullName"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Primary Phone Number TextView -->
+            <TextView
+                android:id="@+id/textViewPrimaryPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primary Phone Number"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="440dp"/>
+
+            <EditText
+                android:id="@+id/editTextPrimaryPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addressbig"
+                android:ems="10"
+                android:inputType="phone"
+                android:paddingStart="30dp"
+                android:textSize="16sp"
+                android:layout_below="@id/textViewPrimaryPhoneNumber"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Backup Phone Number TextView -->
+            <TextView
+                android:id="@+id/textViewBackupPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Backup Phone Number"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="520dp"/>
+
+            <EditText
+                android:id="@+id/editTextBackupPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addressbig"
+                android:ems="10"
+                android:inputType="phone"
+                android:paddingStart="30dp"
+                android:textSize="16sp"
+                android:layout_below="@id/textViewBackupPhoneNumber"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- ImageViews -->
+            <ImageView
+                android:id="@+id/imageViewSaveNewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btnsave"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="620dp"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

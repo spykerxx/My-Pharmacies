@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".DeliveryMyOrdersFragment">
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/orderinformationnew"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78">
+
+
+        <RelativeLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:id="@+id/detailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/imageView56"
+                android:background="@drawable/wishlistproductbg"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/customerNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer name:"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewCallCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="340dp"
+                    android:src="@drawable/callcustomer" />
+
+                <TextView
+                    android:id="@+id/customerAddressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customerPhoneTextView"
+                    android:text="Customer short address:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/customerPhoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customerNameTextView"
+                    android:text="Customer phone:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/customerNeighborhoodTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customerAddressTextView"
+                    android:text="Neighborhood:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/customerStreetTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customerNeighborhoodTextView"
+                    android:text="Street:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/customerApartmentNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customerStreetTextView"
+                    android:text="Apartment Number:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/customerCustomerBackupPhoneNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customerApartmentNumberTextView"
+                    android:text="Customer Backup Phone Number:"
+                    android:textSize="16sp" />
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_below="@id/detailsLayout2"
+                app:srcCompat="@drawable/mapnew" />
+
+            <ImageView
+                android:id="@+id/imageView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_below="@id/imageView12"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@drawable/customerinformationnew" />
+
+            <RelativeLayout
+                android:id="@+id/detailsLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/wishlistproductbg"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/orderNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order number:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/orderNumberTextView"
+                    android:text="Order amount:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pharmacyNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/orderAmountTextView"
+                    android:text="Pharmacy name:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pharmacyAddressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pharmacyNameTextView"
+                    android:text="Pharmacy address:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pharmacyPhoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pharmacyAddressTextView"
+                    android:text="Pharmacy phone:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/orderDetailTextView"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:text="Order details:"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+    <ImageView
+        android:id="@+id/imageViewMyDevlieryProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        app:srcCompat="@drawable/supportprofile" />
+
+    <ImageView
+        android:id="@+id/imageViewMyDeliveryOrderHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        app:srcCompat="@drawable/orderhistorydelivery" />
+
+    <ImageView
+        android:id="@+id/imageViewMyDeliveryFeedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        app:srcCompat="@drawable/thumbsup" />
+
+    <ImageView
+        android:id="@+id/imageViewMyDeliverySupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        app:srcCompat="@drawable/deliverysupport" />
+
+    <ImageView
+        android:id="@+id/imageViewMyDeliveryBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971"
+        app:srcCompat="@drawable/homenew" />
+
+    <ImageView
+        android:id="@+id/imageViewMyDeliveryDeliverOrder"
+        android:layout_width="267dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        app:srcCompat="@drawable/orderdelivered" />
+
+
+    <ImageView
+        android:id="@+id/imageView85"
+        android:layout_width="410dp"
+        android:layout_height="23dp"
+        android:background="@drawable/wishlistproductbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/activeordernew" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_services"
+        android:icon="@drawable/iconservices"
+        android:title="Services" />
+    <item
+        android:id="@+id/action_category"
+        android:icon="@drawable/iconcategory"
+        android:title="Category" />
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/iconhome"
+        android:title="Home" />
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/iconnotifications"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/iconprofile"
+        android:title="Profile" />
+</menu>

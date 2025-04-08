@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/orderhistorytemp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/devider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:textColor="#000" />
+        <!-- TextView: Delivery Date label -->
+        <TextView
+            android:id="@+id/textViewDeliveryTrackDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Delivery Date:"
+            android:textColor="#000" />
+
+        <!-- TextView: Delivery Date value -->
+        <TextView
+            android:id="@+id/textViewDeliveryTrackDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewDeliveryTrackDateLabel"
+            android:text="12/04/2023"
+            android:textColor="#000" />
+
+        <!-- TextView: Delivery Time label -->
+        <TextView
+            android:id="@+id/textViewDeliveryTrackTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="16dp"
+            android:text="Delivery Time:"
+            android:textColor="#000" />
+
+        <!-- TextView: Delivery Time value -->
+        <TextView
+            android:id="@+id/textViewDeliveryTrackTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/textViewDeliveryTrackTimeLabel"
+            android:text="04:03 PM"
+            android:textColor="#000" />
+
+        <!-- TextView: Delivered By label -->
+
+        <!-- TextView: Delivered By value -->
+
+        <!-- TextView: Delivery representative number label -->
+        <TextView
+            android:id="@+id/textViewRepresentativeNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDeliveryTrackDateLabel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Delivery representative number:"
+            android:textColor="#000" />
+
+        <!-- TextView: Delivery representative number value -->
+        <TextView
+            android:id="@+id/textViewRepresentativeNumberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDeliveryTrackDateLabel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/textViewRepresentativeNumberLabel"
+            android:text="132#######"
+            android:textColor="#000" />
+
+        <!-- TextView: Delivery representative name label -->
+        <TextView
+            android:id="@+id/textViewRepresentativeNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRepresentativeNumberLabel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Delivery representative name:"
+            android:textColor="#000" />
+
+        <!-- TextView: Delivery representative name value -->
+        <TextView
+            android:id="@+id/textViewRepresentativeNameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRepresentativeNumberValue"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/textViewRepresentativeNameLabel"
+            android:text="Moh#### #####"
+            android:textColor="#000" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368"
+        app:srcCompat="@drawable/orderreceived" />
+
+    <ImageView
+        android:id="@+id/imageViewLinePhaseTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.440"
+        app:srcCompat="@drawable/dotsnotyetcomplete" />
+
+    <ImageView
+        android:id="@+id/imageViewPhaseThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681"
+        app:srcCompat="@drawable/bigdotnotcomplete" />
+
+    <ImageView
+        android:id="@+id/imageViewLinePhaseThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601"
+        app:srcCompat="@drawable/dotsnotstarted" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/orderpreparing" />
+
+    <ImageView
+        android:id="@+id/imageView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66999996"
+        app:srcCompat="@drawable/orderontheway" />
+
+    <ImageView
+        android:id="@+id/imageViewPhaseFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.850"
+        app:srcCompat="@drawable/bigdotnotcomplete" />
+
+    <ImageView
+        android:id="@+id/imageViewPhaseTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519"
+        app:srcCompat="@drawable/bigdotnotcomplete" />
+
+    <ImageView
+        android:id="@+id/imageView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839"
+        app:srcCompat="@drawable/ordershipped" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/bigdotscomplete" />
+
+    <ImageView
+        android:id="@+id/imageViewLinePhaseFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.770"
+        app:srcCompat="@drawable/dotsnotstarted" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/activeorder" />
+
+    <ImageView
+        android:id="@+id/imageViewTrackYourOrderHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/orderhistory" />
+
+    <ImageView
+        android:id="@+id/imageViewTrackOrderBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971"
+        app:srcCompat="@drawable/trackorderheader" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/orderhistorytemp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002">
+
+
+        <!-- TextView: Order number -->
+        <TextView
+            android:id="@+id/textViewTrackOrderNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Order number:"
+            android:textColor="#000" />
+
+        <!-- TextView: Order number value -->
+        <TextView
+            android:id="@+id/textViewTrackOrderNumberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/textViewTrackOrderNumberLabel"
+            android:text="1"
+            android:textColor="#000" />
+
+        <!-- TextView: Order date -->
+        <TextView
+            android:id="@+id/textViewTrackOrderDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderNumberLabel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Order date:"
+            android:textColor="#000" />
+
+        <!-- TextView: Order date value -->
+        <TextView
+            android:id="@+id/textViewTrackOrderDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderNumberValue"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/textViewTrackOrderDateLabel"
+            android:text="12/04/2024"
+            android:textColor="#000" />
+
+        <!-- TextView: Order time -->
+        <TextView
+            android:id="@+id/textViewTrackOrderTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderNumberLabel"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="7dp"
+            android:text="Order time:"
+            android:textColor="#000" />
+
+        <!-- TextView: Order time value -->
+        <TextView
+            android:id="@+id/textViewTrackOrderTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderNumberLabel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/textViewTrackOrderTimeLabel"
+            android:text="12:30 PM"
+            android:textColor="#000" />
+
+        <!-- TextView: Order amount label -->
+        <TextView
+            android:id="@+id/textViewTrackOrderAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderDateLabel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Order amount:"
+            android:textColor="#000" />
+
+        <!-- TextView: Order amount value -->
+        <TextView
+            android:id="@+id/textViewTrackOrderAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderDateValue"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/textViewTrackOrderAmountLabel"
+            android:text="240.47 SAR"
+            android:textColor="#000" />
+
+        <!-- TextView: Earned points label -->
+        <TextView
+            android:id="@+id/textViewEarnedPointsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderDateLabel"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="7dp"
+            android:text="Earned points:"
+            android:textColor="#000" />
+
+        <!-- TextView: Earned points value -->
+        <TextView
+            android:id="@+id/textViewEarnedPointsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTrackOrderDateLabel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/textViewEarnedPointsLabel"
+            android:text="48 points"
+            android:textColor="#000" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

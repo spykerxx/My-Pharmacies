@@ -1,0 +1,33 @@
+<resources>
+    <string-array name="category_items">
+        <item>Mom &amp; Baby</item>
+        <item>Vitamins &amp; Supplements</item>
+        <item>Medications</item>
+        <item>Skin Care</item>
+        <item>Hair Care</item>
+        <item>Makeup &amp; Lenses</item>
+        <item>Personal Care</item>
+        <item>Home Health Care</item>
+        <item>Healthy Food</item>
+    </string-array>
+
+    <string-array name="filter_items">
+        <item></item>
+        <item>Mom &amp; Baby</item>
+        <item>Vitamins &amp; Supplements</item>
+        <item>Medications</item>
+        <item>Skin Care</item>
+        <item>Hair Care</item>
+        <item>Makeup &amp; Lenses</item>
+        <item>Personal Care</item>
+        <item>Home Health Care</item>
+        <item>Healthy Food</item>
+    </string-array>
+
+    <string-array name="stock_items">
+        <item></item>
+        <item>in stock</item>
+        <item>out of stock</item>
+
+    </string-array>
+</resources>

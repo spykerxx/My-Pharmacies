@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryOrderActivity">
+
+
+    <!-- Your existing views here -->
+
+    <ImageView
+        android:id="@+id/imageViewDeliveryTakeOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89"
+        app:srcCompat="@drawable/takeorderbtn" />
+
+    <ImageView
+        android:id="@+id/imageView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/pointsimage" />
+
+    <ImageView
+        android:id="@+id/imageViewDeliveryBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/arrow" />
+
+    <RelativeLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/wishlistproductbg"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64">
+
+        <TextView
+            android:id="@+id/orderNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Order number:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/orderAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderNumberTextView"
+            android:text="Order amount:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pharmacyNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderAmountTextView"
+            android:text="Pharmacy name:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pharmacyAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacyNameTextView"
+            android:text="Pharmacy address:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pharmacyPhoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacyAddressTextView"
+            android:text="Pharmacy phone:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/customerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacyPhoneTextView"
+            android:text="Customer name:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/customerAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customerNameTextView"
+            android:text="Customer address:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/customerPhoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customerAddressTextView"
+            android:text="Customer phone:"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/orderdetails" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

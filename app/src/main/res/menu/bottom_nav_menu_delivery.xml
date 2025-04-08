@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_available_orders"
+        android:title="Order Request"
+        android:icon="@drawable/truk" />
+    <item
+        android:id="@+id/menu_my_orders"
+        android:title="Home"
+        android:icon="@drawable/iconhome" />
+
+    <item
+        android:id="@+id/menu_my_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/iconnotifications" />
+</menu>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/orderhistorytemp2">
+
+    <!-- TextView: Order number -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Order number:"
+        android:textColor="#000" />
+
+    <!-- TextView: Order number value -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@id/textViewDeliveryOrderNumberLabel"
+        android:text="1"
+        android:textColor="#000" />
+
+    <!-- TextView: Order date -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderNumberLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:text="Order date:"
+        android:textColor="#000" />
+
+    <!-- TextView: Order date value -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderDateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderNumberValue"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/textViewDeliveryOrderDateLabel"
+        android:text="12/04/2024"
+        android:textColor="#000" />
+
+    <!-- TextView: Order time -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderNumberLabel"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="7dp"
+        android:text="Order time:"
+        android:textColor="#000" />
+
+    <!-- TextView: Order time value -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderTimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderNumberLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/textViewDeliveryOrderTimeLabel"
+        android:text="12:30 PM"
+        android:textColor="#000" />
+
+    <!-- TextView: Order amount label -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderDateLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:text="Order amount:"
+        android:textColor="#000" />
+
+    <!-- TextView: Order amount value -->
+    <TextView
+        android:id="@+id/textViewDeliveryOrderAmountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderDateValue"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/textViewDeliveryOrderAmountLabel"
+        android:text="240.47 SAR"
+        android:textColor="#000" />
+
+    <!-- TextView: Earned points label -->
+    <TextView
+        android:id="@+id/textViewEarnedPointsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderDateLabel"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="7dp"
+        android:text="Earned points:"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+    <!-- TextView: Earned points value -->
+    <TextView
+        android:id="@+id/textViewEarnedPointsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeliveryOrderDateLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/textViewEarnedPointsLabel"
+        android:text="48 points"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+    <!-- TextView: Delivery Date label -->
+    <TextView
+        android:id="@+id/textViewDeliveryDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEarnedPointsLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Delivery Date:"
+        android:textColor="#000" />
+
+    <!-- TextView: Delivery Date value -->
+    <TextView
+        android:id="@+id/textViewDeliveryDateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEarnedPointsValue"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/textViewDeliveryDateLabel"
+        android:text="12/04/2023"
+        android:textColor="#000" />
+
+    <!-- TextView: Delivery Time label -->
+    <TextView
+        android:id="@+id/textViewDeliveryTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEarnedPointsValue"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="16dp"
+        android:text="Delivery Time:"
+        android:textColor="#000" />
+
+    <!-- TextView: Delivery Time value -->
+    <TextView
+        android:id="@+id/textViewDeliveryTimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEarnedPointsValue"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/textViewDeliveryTimeLabel"
+        android:text="04:03 PM"
+        android:textColor="#000" />
+
+    <!-- TextView: Delivered By label -->
+
+    <!-- TextView: Delivered By value -->
+
+    <!-- TextView: Delivery representative number label -->
+
+    <!-- TextView: Delivery representative number value -->
+
+    <!-- TextView: Delivery representative name label -->
+
+    <!-- TextView: Delivery representative name value -->
+
+
+</RelativeLayout>

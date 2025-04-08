@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Email Address -->
+                <ImageView
+                    android:id="@+id/imageViewEmailAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/emailaddress" />
+
+                <EditText
+                    android:id="@+id/editTextSignupEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewEmailAddress"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/plaintext"
+                    android:inputType="textEmailAddress" />
+
+                <!-- Username -->
+                <ImageView
+                    android:id="@+id/imageViewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextSignupEmail"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/username2" />
+
+                <EditText
+                    android:id="@+id/editTextSignupUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewUsername"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/plaintext" />
+
+                <!-- Phone Number -->
+                <ImageView
+                    android:id="@+id/imageViewPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextSignupUsername"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/phonenumber" />
+
+                <EditText
+                    android:id="@+id/editTextPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewPhoneNumber"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/plaintext"
+                    android:inputType="phone" />
+
+                <!-- Password -->
+                <ImageView
+                    android:id="@+id/imageViewPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextPhoneNumber"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/password" />
+
+                <EditText
+                    android:id="@+id/editTextSignupPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewPassword"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/plaintext"
+                    android:inputType="textPassword" />
+
+                <!-- Confirm Password -->
+                <ImageView
+                    android:id="@+id/imageViewConfirmPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextSignupPassword"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/confirmpass" />
+
+                <EditText
+                    android:id="@+id/editTextSignupConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewConfirmPassword"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/plaintext"
+                    android:inputType="textPassword" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewGoToTermsAndConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6925"
+        app:srcCompat="@drawable/terms" />
+
+    <ImageView
+        android:id="@+id/imageViewAlreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89"
+        app:srcCompat="@drawable/alreadyhaveaccount" />
+
+    <ImageView
+        android:id="@+id/imageViewButtonSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82"
+        app:srcCompat="@drawable/btnsignup" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree with"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.70" />
+
+    <ImageView
+        android:id="@+id/imageViewSignupBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/createaccountheader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

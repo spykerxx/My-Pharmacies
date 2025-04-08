@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_my_products"
+        android:title="Home"
+        android:icon="@drawable/iconhome" />
+    <item
+        android:id="@+id/menu_my_orders"
+        android:title="Orders"
+        android:icon="@drawable/myorders" />
+
+    <item
+        android:id="@+id/menu_my_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/iconnotifications" />
+
+    <item
+        android:id="@+id/menu_my_profile"
+        android:title="Profile"
+        android:icon="@drawable/iconprofile" />
+</menu>

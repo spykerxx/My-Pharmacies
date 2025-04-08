@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pharmacies"
+        tools:targetApi="31">
+        <activity
+            android:name=".DeliveryCallCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerMedicalHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyChatRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".UploadImageTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddOfferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyOffersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".BarcodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifiyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacySearchProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyConsRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyNotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacySettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyCreditCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryOrderHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompareProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacySignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliverySignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreditCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckOutTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrackOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrdersHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PointsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WishListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GiftingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicalHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".PasswordRecoveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
